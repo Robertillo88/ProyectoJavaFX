@@ -20,7 +20,11 @@ public class IniciarSesionController extends SceneController{
     @FXML
     private Button bIniciar;
     @FXML
+    private Button bAtras;
+    @FXML
     private Button bTerminos;
+    @FXML
+    private Button bCerrar;
 
     @FXML
     private TextField tUsuario;
@@ -40,7 +44,12 @@ public class IniciarSesionController extends SceneController{
     String datosFile = "C:\\Users\\super\\IdeaProjects\\ProyectoJavaFX\\src\\main\\java\\com\\example\\proyectojavafx\\Datos.txt";
 
     public void Terminos(ActionEvent e) throws IOException {
-        pThirdPane = FXMLLoader.load(getClass().getResource("Terminos.fxml"));
+        switchFxml("Terminos.fxml", bTerminos);
+    }
+    public void cerrar(ActionEvent e) throws IOException {
+        switchFxml("IniciarSesion.fxml", bCerrar);
+    }
+    public void atras(ActionEvent e) throws IOException {
 
     }
     public void iniciarSesion(ActionEvent e) {
