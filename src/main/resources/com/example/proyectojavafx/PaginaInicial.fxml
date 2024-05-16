@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="756.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectojavafx.PaginaPrinicpalController">
+   <children>
+      <HBox>
+         <children>
+            <Pane id="SecondPane" prefHeight="756.0" prefWidth="550.0">
+               <children>
+                  <ImageView fitHeight="229.0" fitWidth="450.0" layoutX="169.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/bank.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="332.0" prefHeight="317.0" prefWidth="338.0" text="Banco De Madrid" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Fira Code Regular" size="78.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="686.0" text="Roberto Martinez Davies">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane id="FirstPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="685.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="55.0" prefHeight="125.0" prefWidth="536.0" text="USUARIO">
+                     <font>
+                        <Font name="Droid Serif" size="60.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="216.0" layoutY="317.0" prefHeight="380.0" prefWidth="253.0">
+                     <children>
+                        <StackPane layoutY="210.0" prefHeight="160.0" prefWidth="253.0">
+                           <children>
+                              <Button fx:id="bCrearCuenta" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchCrearCuenta" opacity="0.0" prefHeight="170.0" prefWidth="358.0" text="CrearCuenta">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="253.0" text="Crear Cuenta">
+                                 <StackPane.margin>
+                                    <Insets top="125.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="138.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                                 <image>
+                                    <Image url="@../../../Imagenes/new-account%20(1).png" />
+                                 </image></ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="160.0" prefWidth="253.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="253.0" text="Iniciar Sesion">
+                                 <StackPane.margin>
+                                    <Insets top="110.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="138.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Imagenes/top-up.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets bottom="60.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <Button fx:id="bIniciarSesion" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchIniciarSesion" opacity="0.0" prefHeight="170.0" prefWidth="253.0" text="IniciarSesion">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets bottom="30.0" />
+                                 </StackPane.margin>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="69.0" fitWidth="78.0" layoutX="309.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/password-setting%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</Pane>

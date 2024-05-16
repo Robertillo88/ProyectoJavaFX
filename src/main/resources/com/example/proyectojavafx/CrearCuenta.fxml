@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectojavafx.LogicController">
+   <children>
+      <Label alignment="CENTER" layoutX="353.0" layoutY="198.0" prefHeight="72.0" prefWidth="265.0" text="Nombre de Usuario">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="353.0" layoutY="270.0" prefHeight="72.0" prefWidth="265.0" text="Contraseña">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="353.0" layoutY="342.0" prefHeight="72.0" prefWidth="265.0" text="DNI">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lDNI" alignment="CENTER" layoutX="353.0" layoutY="414.0" prefHeight="72.0" prefWidth="265.0" text="Direccion Correo">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tccNombreUsuario" layoutX="625.0" layoutY="215.0" prefHeight="39.0" prefWidth="230.0" />
+      <TextField fx:id="tccContraseña" layoutX="625.0" layoutY="287.0" prefHeight="39.0" prefWidth="230.0" promptText="&gt;8 caracteres &amp;&amp; &gt;1 [&quot;!@#~€/!]" />
+      <TextField fx:id="tDNI" alignment="CENTER" layoutX="625.0" layoutY="359.0" prefHeight="39.0" prefWidth="230.0" />
+      <TextField fx:id="tCorreo" layoutX="625.0" layoutY="431.0" prefHeight="39.0" prefWidth="230.0" promptText="ejemplo@gmail.com" />
+      <Button fx:id="bCrear" layoutX="581.0" layoutY="572.0" mnemonicParsing="false" onAction="#crearCuenta" prefHeight="39.0" prefWidth="74.0" text="Crear" />
+   </children>
+</Pane>

@@ -1,0 +1,20 @@
+.button {
+    -fx-background-image:url('Imagenes/bank.png');
+    -fx-graphic: url("Imagenes/bank.png");
+}
+
+#SecondPane {
+    -fx-background-color: #044675;
+}
+
+#FirstPane {
+    -fx-background-color: #568fb8;
+}
+
+#FourthPane {
+    -fx-background-color: #044675;
+}
+
+#Third-Pane {
+    -fx-background-color: #568fb8;
+}

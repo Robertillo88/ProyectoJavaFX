@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectojavafx.IniciarSesionController">
+   <children>
+      <HBox prefHeight="756.0" prefWidth="1235.0">
+         <children>
+            <Pane id="FourthPane" fx:id="pFourthPane" prefHeight="200.0" prefWidth="550.0" />
+            <Pane id="ThirdPane" fx:id="pThridPane" prefHeight="200.0" prefWidth="685.0">
+               <children>
+                  <Button fx:id="bIniciar" layoutX="291.0" layoutY="613.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="58.0" prefWidth="104.0" text="Button" />
+                  <TextField fx:id="tUsuario" layoutX="203.0" layoutY="293.0" prefHeight="64.0" prefWidth="280.0" promptText="Usuario">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="tContraseña" layoutX="203.0" layoutY="396.0" prefHeight="64.0" prefWidth="280.0" promptText="Contraseña">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="lMessage" alignment="TOP_CENTER" layoutX="203.0" layoutY="539.0" prefHeight="58.0" prefWidth="280.0" text="wdwdw" textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rAcepto" layoutX="273.0" layoutY="482.0" mnemonicParsing="false" text="Acepto los Terminos y Condiciones">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Terminos" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rNoAcepto" layoutX="273.0" layoutY="508.0" mnemonicParsing="false" text="No Acepto los Terminos y Condiciones" toggleGroup="$Terminos">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </RadioButton>
+                  <StackPane layoutX="211.0" layoutY="479.0">
+                     <children>
+                        <Button fx:id="bTerminos" mnemonicParsing="false" onAction="#Terminos" opacity="0.0" prefHeight="58.0" prefWidth="54.0" text="Button" />
+                        <ImageView fitHeight="58.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Imagenes/inbox.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children></Pane>
+         </children>
+      </HBox>
+   </children>
+</Pane>
