@@ -41,7 +41,7 @@ public class IniciarSesionController extends SceneController{
     @FXML
     private Pane pThirdPane;
 
-    String datosFile = "C:\\Users\\super\\IdeaProjects\\ProyectoJavaFX\\src\\main\\java\\com\\example\\proyectojavafx\\Datos.txt";
+
 
     public void Terminos(ActionEvent e) throws IOException {
         switchFxml("Terminos.fxml", bTerminos);

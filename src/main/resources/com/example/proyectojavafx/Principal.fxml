@@ -2,47 +2,78 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <VBox prefHeight="756.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+      <VBox id="PrincipalPane" prefHeight="756.0" prefWidth="180.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane prefHeight="205.0" prefWidth="180.0">
+            <StackPane prefHeight="200.0" prefWidth="180.0">
                <children>
-                  <Button layoutX="53.0" layoutY="49.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Button" />
-               </children></AnchorPane>
-            <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Button">
+                  <Button fx:id="bSettings" mnemonicParsing="false" opacity="0.0" prefHeight="75.0" prefWidth="75.0" text="Button" />
+                  <ImageView fx:id="bCartera" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/wallet-passes-app.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="75.0" prefWidth="75.0">
                <VBox.margin>
-                  <Insets left="52.0" />
-               </VBox.margin></Button>
-            <Button layoutX="62.0" layoutY="215.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Button">
-               <VBox.margin>
-                  <Insets left="52.0" top="34.0" />
+                  <Insets />
                </VBox.margin>
-            </Button>
-            <Button layoutX="62.0" layoutY="320.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Button">
+               <children>
+                  <Button mnemonicParsing="false" opacity="0.0" prefHeight="75.0" prefWidth="75.0" text="Button" />
+                  <ImageView fx:id="bTienda" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/buy.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane>
                <VBox.margin>
-                  <Insets left="52.0" top="34.0" />
+                  <Insets top="34.0" />
                </VBox.margin>
-            </Button>
-            <Button layoutX="62.0" layoutY="425.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Button">
+               <children>
+                  <Button mnemonicParsing="false" opacity="0.0" prefHeight="75.0" prefWidth="75.0" text="Button" />
+                  <ImageView fx:id="bHistorial" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/transaction.png" />
+                     </image></ImageView>
+               </children>
+            </StackPane>
+            <StackPane>
                <VBox.margin>
-                  <Insets left="52.0" top="34.0" />
+                  <Insets top="34.0" />
                </VBox.margin>
-            </Button>
-            <Button layoutX="62.0" layoutY="530.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" text="Button">
+               <children>
+                  <Button mnemonicParsing="false" opacity="0.0" prefHeight="75.0" prefWidth="75.0" text="Button" />
+                  <ImageView fx:id="bPropiedades" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/bank.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane>
                <VBox.margin>
-                  <Insets left="52.0" top="34.0" />
+                  <Insets top="34.0" />
                </VBox.margin>
-            </Button>
+               <children>
+                  <Button mnemonicParsing="false" opacity="0.0" prefHeight="75.0" prefWidth="75.0" text="Button" />
+                  <ImageView fx:id="bSettings" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/personalization.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
          </children>
       </VBox>
    </left>
-   <right>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
-   </right>
    <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <Pane id="MainPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

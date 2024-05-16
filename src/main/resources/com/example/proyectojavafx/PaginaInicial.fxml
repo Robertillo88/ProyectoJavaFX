@@ -19,7 +19,7 @@
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="332.0" prefHeight="317.0" prefWidth="338.0" text="Banco De Madrid" textAlignment="CENTER" wrapText="true">
                      <font>
-                        <Font name="Fira Code Regular" size="78.0" />
+                        <Font name="Fira Code Retina" size="78.0" />
                      </font>
                   </Label>
                   <Label layoutX="197.0" layoutY="686.0" text="Roberto Martinez Davies">
@@ -37,9 +37,16 @@
                   </Label>
                   <Pane layoutX="216.0" layoutY="317.0" prefHeight="380.0" prefWidth="253.0">
                      <children>
-                        <StackPane layoutY="210.0" prefHeight="160.0" prefWidth="253.0">
+                        <StackPane layoutY="220.0" prefHeight="160.0" prefWidth="253.0">
                            <children>
-                              <Button fx:id="bCrearCuenta" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchCrearCuenta" opacity="0.0" prefHeight="170.0" prefWidth="358.0" text="CrearCuenta">
+                              <ImageView fitHeight="140.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                                 <image>
+                                    <Image url="@../../../Imagenes/new-account%20(1).png" />
+                                 </image></ImageView>
+                              <Button fx:id="bCrearCuenta" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchCrearCuenta" opacity="0.0" prefHeight="160.0" prefWidth="180.0" text="CrearCuenta">
                                  <font>
                                     <Font size="40.0" />
                                  </font>
@@ -49,27 +56,13 @@
                                     <Insets top="125.0" />
                                  </StackPane.margin>
                                  <font>
-                                    <Font size="27.0" />
+                                    <Font name="Fira Code Medium" size="20.0" />
                                  </font></Label>
-                              <ImageView fitHeight="138.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
-                                 <StackPane.margin>
-                                    <Insets />
-                                 </StackPane.margin>
-                                 <image>
-                                    <Image url="@../../../Imagenes/new-account%20(1).png" />
-                                 </image></ImageView>
                            </children>
                         </StackPane>
                         <StackPane prefHeight="160.0" prefWidth="253.0">
                            <children>
-                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="253.0" text="Iniciar Sesion">
-                                 <StackPane.margin>
-                                    <Insets top="110.0" />
-                                 </StackPane.margin>
-                                 <font>
-                                    <Font size="27.0" />
-                                 </font></Label>
-                              <ImageView fitHeight="138.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="140.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../Imagenes/top-up.png" />
                                  </image>
@@ -77,21 +70,28 @@
                                     <Insets bottom="60.0" />
                                  </StackPane.margin>
                               </ImageView>
-                              <Button fx:id="bIniciarSesion" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchIniciarSesion" opacity="0.0" prefHeight="170.0" prefWidth="253.0" text="IniciarSesion">
+                              <Button fx:id="bIniciarSesion" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchIniciarSesion" opacity="0.0" prefHeight="188.0" prefWidth="180.0" text="IniciarSesion">
                                  <font>
-                                    <Font size="40.0" />
+                                    <Font name="Fira Code Retina" size="40.0" />
                                  </font>
                                  <StackPane.margin>
-                                    <Insets bottom="30.0" />
+                                    <Insets />
                                  </StackPane.margin>
                               </Button>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="253.0" text="Iniciar Sesion">
+                                 <StackPane.margin>
+                                    <Insets top="110.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font name="Fira Code Medium" size="20.0" />
+                                 </font></Label>
                            </children>
                         </StackPane>
                      </children>
                   </Pane>
                   <ImageView fitHeight="69.0" fitWidth="78.0" layoutX="309.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../Imagenes/password-setting%20(1).png" />
+                        <Image url="@../../../Imagenes/password-setting.png" />
                      </image>
                   </ImageView>
                </children>

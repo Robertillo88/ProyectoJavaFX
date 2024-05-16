@@ -9,7 +9,17 @@
    <children>
       <HBox prefHeight="756.0" prefWidth="1235.0">
          <children>
-            <Pane id="FourthPane" fx:id="pFourthPane" prefHeight="200.0" prefWidth="550.0" />
+            <Pane id="FourthPane" fx:id="pFourthPane" prefHeight="200.0" prefWidth="550.0">
+               <children>
+                  <ImageView fitHeight="229.0" fitWidth="450.0" layoutX="169.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/bank.png" />
+                     </image></ImageView>
+                  <Label alignment="CENTER" layoutX="115.0" layoutY="332.0" prefHeight="317.0" prefWidth="338.0" text="Banco de Madrid" wrapText="true">
+                     <font>
+                        <Font name="Fira Code Retina" size="78.0" />
+                     </font></Label>
+               </children></Pane>
             <Pane id="ThirdPane" fx:id="pThridPane" prefHeight="200.0" prefWidth="685.0">
                <children>
                   <Button fx:id="bIniciar" layoutX="291.0" layoutY="605.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="58.0" prefWidth="104.0" text="Iniciar Sesion" />
@@ -23,7 +33,7 @@
                         <Font size="20.0" />
                      </font>
                   </PasswordField>
-                  <Label fx:id="lMessage" alignment="TOP_CENTER" layoutX="203.0" layoutY="539.0" prefHeight="58.0" prefWidth="280.0" textFill="RED">
+                  <Label fx:id="lMessage" alignment="CENTER" layoutX="203.0" layoutY="539.0" prefHeight="58.0" prefWidth="280.0" textFill="RED" wrapText="true">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -51,7 +61,7 @@
                         <Button fx:id="bTerminos" mnemonicParsing="false" onAction="#Terminos" opacity="0.0" prefHeight="58.0" prefWidth="54.0" text="Button" />
                      </children>
                   </StackPane>
-                  <Button fx:id="bAtras" layoutX="47.0" layoutY="44.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="104.0" text="Atras" />
+                  <Button id="btn-one" fx:id="bAtras" layoutX="47.0" layoutY="44.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="104.0" text="Atras" />
                </children></Pane>
          </children>
       </HBox>
