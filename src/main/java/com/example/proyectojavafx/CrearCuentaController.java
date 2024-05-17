@@ -2,15 +2,17 @@ package com.example.proyectojavafx;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class CrearCuentaController extends SceneController{
+public class CrearCuentaController extends SceneController implements Initializable {
     @FXML
     TextField tUsuario;
     @FXML
@@ -20,11 +22,14 @@ public class CrearCuentaController extends SceneController{
     @FXML
     TextField tCorreo;
     @FXML
-    TextField tFechaNacimiento;
+    DatePicker tFechaNacimiento;
     @FXML
     TextField tNombre;
     @FXML
     TextField tApellido;
+    @FXML
+    ChoiceBox<String>cbSexo;
+
 
     public void crearCuenta(ActionEvent e) {
         try {
@@ -42,5 +47,11 @@ public class CrearCuentaController extends SceneController{
         } catch (IOException f) {
             System.out.println("Error al escribir en el archivo: " + f.getMessage());
         }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        cbSexo.getItems().addAll("Hombre", "Mujer", "Otro");
+
     }
 }

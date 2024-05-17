@@ -6,50 +6,61 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectojavafx.CrearCuentaController">
    <children>
-      <Button fx:id="bCrear" layoutX="581.0" layoutY="572.0" mnemonicParsing="false" onAction="#crearCuenta" prefHeight="39.0" prefWidth="74.0" text="Crear" />
       <HBox prefHeight="756.0" prefWidth="1235.0">
          <children>
             <Pane id="FifthPane" prefHeight="756.0" prefWidth="550.0" />
             <Pane id="SixthPane" prefHeight="756.0" prefWidth="685.0">
                <children>
-                  <Label alignment="CENTER" layoutX="14.0" layoutY="79.0" prefHeight="72.0" prefWidth="265.0" text="Nombre de Usuario">
+                  <Label alignment="CENTER" layoutX="64.0" layoutY="30.0" prefHeight="60.0" prefWidth="265.0" text="Nombre de Usuario">
                      <font>
-                        <Font size="28.0" />
+                        <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="tUsuario" layoutX="279.0" layoutY="96.0" prefHeight="39.0" prefWidth="230.0" promptText="usuario" />
-                  <Label alignment="CENTER" layoutX="14.0" layoutY="151.0" prefHeight="72.0" prefWidth="265.0" text="Contraseña">
+                  <TextField fx:id="tUsuario" layoutX="329.0" layoutY="40.0" prefHeight="40.0" prefWidth="230.0" promptText="usuario" />
+                  <Label alignment="CENTER" layoutX="64.0" layoutY="89.0" prefHeight="60.0" prefWidth="265.0" text="Contraseña">
                      <font>
-                        <Font size="28.0" />
+                        <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="14.0" layoutY="223.0" prefHeight="72.0" prefWidth="265.0" text="DNI">
+                  <Label alignment="CENTER" layoutX="64.0" layoutY="149.0" prefHeight="60.0" prefWidth="265.0" text="DNI">
                      <font>
-                        <Font size="28.0" />
+                        <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="tDNI" layoutX="279.0" layoutY="240.0" prefHeight="39.0" prefWidth="230.0" promptText="11111111T" />
-                  <Label fx:id="lDNI" alignment="CENTER" layoutX="14.0" layoutY="295.0" prefHeight="72.0" prefWidth="265.0" text="Nombre">
+                  <TextField fx:id="tDNI" layoutX="329.0" layoutY="159.0" prefHeight="40.0" prefWidth="230.0" promptText="11111111T" />
+                  <Label fx:id="lDNI" alignment="CENTER" layoutX="64.0" layoutY="211.0" prefHeight="60.0" prefWidth="265.0" text="Nombre">
                      <font>
-                        <Font size="28.0" />
+                        <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="tNombre" layoutX="279.0" layoutY="312.0" prefHeight="39.0" prefWidth="230.0" promptText="ejemplo@gmail.com" />
-                  <Label fx:id="lDNI1" alignment="CENTER" layoutX="14.0" layoutY="367.0" prefHeight="72.0" prefWidth="265.0" text="Apellido">
+                  <TextField fx:id="tNombre" layoutX="329.0" layoutY="221.0" prefHeight="40.0" prefWidth="230.0" />
+                  <Label fx:id="lDNI1" alignment="CENTER" layoutX="64.0" layoutY="271.0" prefHeight="60.0" prefWidth="265.0" text="Apellido">
                      <font>
-                        <Font size="28.0" />
+                        <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="tApellido" layoutX="279.0" layoutY="384.0" prefHeight="39.0" prefWidth="230.0" promptText="ejemplo@gmail.com" />
-                  <Label fx:id="lDNI11" alignment="CENTER" layoutX="14.0" layoutY="439.0" prefHeight="72.0" prefWidth="265.0" text="Fecha de Nacimiento">
+                  <TextField fx:id="tApellido" layoutX="329.0" layoutY="281.0" prefHeight="40.0" prefWidth="230.0" />
+                  <Label fx:id="lDNI11" alignment="CENTER" layoutX="64.0" layoutY="331.0" prefHeight="60.0" prefWidth="265.0" text="Fecha de Nacimiento">
                      <font>
-                        <Font size="28.0" />
+                        <Font size="24.0" />
                      </font>
                   </Label>
-                  <DatePicker fx:id="tFechaNacimiento" layoutX="279.0" layoutY="456.0" prefHeight="39.0" prefWidth="230.0" promptText="DD/MM/YY" />
-                  <ComboBox layoutX="359.0" layoutY="625.0" prefWidth="150.0" promptText="Hola" />
-                  <ChoiceBox layoutX="343.0" layoutY="552.0" prefWidth="150.0" />
-                  <PasswordField fx:id="tContraseña" layoutX="279.0" layoutY="168.0" prefHeight="39.0" prefWidth="230.0" promptText="Al menos 8 caracteres" />
+                  <DatePicker fx:id="tFechaNacimiento" layoutX="329.0" layoutY="341.0" prefHeight="40.0" prefWidth="230.0" promptText="DD/MM/YY" />
+                  <ChoiceBox fx:id="cbSexo" layoutX="329.0" layoutY="403.0" prefHeight="40.0" prefWidth="230.0" />
+                  <PasswordField fx:id="tContraseña" layoutX="329.0" layoutY="99.0" prefHeight="40.0" prefWidth="230.0" promptText="Al menos 8 caracteres" />
+                  <Label fx:id="lDNI111" alignment="CENTER" layoutX="64.0" layoutY="393.0" prefHeight="60.0" prefWidth="265.0" text="Sexo">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bCrear" layoutX="329.0" layoutY="688.0" mnemonicParsing="false" onAction="#crearCuenta" prefHeight="39.0" prefWidth="74.0" text="Crear" />
+                  <TextField fx:id="tNombre1" layoutX="329.0" layoutY="463.0" prefHeight="40.0" prefWidth="230.0" promptText="ejemplo@gmail.com" />
+                  <Label fx:id="lDNI1111" alignment="CENTER" layoutX="64.0" layoutY="453.0" prefHeight="60.0" prefWidth="265.0" text="Email">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Slider layoutX="22.0" layoutY="547.0" majorTickUnit="1000.0" max="50000.0" min="10000.0" minorTickCount="1000" prefHeight="37.0" prefWidth="630.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
                </children></Pane>
          </children>
       </HBox>
