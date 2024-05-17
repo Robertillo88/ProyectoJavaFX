@@ -1,4 +1,4 @@
-
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 #SecondPane {
     -fx-background-color: #044675;
 }
@@ -11,8 +11,8 @@
     -fx-background-color: #044675;
 }
 
-#Third-Pane {
-    -fx-background-color: #044675;
+#ThirdPane {
+    -fx-background-color: #568fb8;
 }
 
 #Terminos {
@@ -21,4 +21,64 @@
 
 #Scroll{
     -fx-background-color: #568fb8;
+}
+#PrincipalPane {
+    -fx-background-color: #044675;
+}
+#MainPane {
+-fx-background-color: #568fb8;
+}
+#Fifth {
+-fx-background-color: #568fb8;
+}
+#Sixth {
+-fx-background-color: #044675;
+}
+
+#btn-one {
+  -fx-color: #FFF;
+  -fx-transition: all 0.3s;
+}
+#btn-one span {
+  -fx-transition: all 0.3s;
+}
+#btn-one::before {
+  -fx-content: '';
+  -fx-position: absolute;
+  -fx-bottom: 0;
+  -fx-left: 0;
+  -fx-width: 100%;
+  -fx-height: 100%;
+  -fx-z-index: 1;
+  -fx-opacity: 0;
+  -fx-transition: all 0.3s;
+  -fx-border-top-width: 1px;
+  -fx-border-bottom-width: 1px;
+  -fx-border-top-style: solid;
+  -fx-border-bottom-style: solid;
+  -fx-border-top-color: rgba(255,255,255,0.5);
+  -fx-border-bottom-color: rgba(255,255,255,0.5);
+  -fx-transform: scale(0.1, 1);
+}
+#btn-one:hover span {
+  -fx-letter-spacing: 2px;
+}
+#btn-one:hover::before {
+  -fx-opacity: 1;
+  -fx-transform: scale(1, 1);
+}
+#btn-one::after {
+  -fx-content: '';
+  -fx-position: absolute;
+  -fx-bottom: 0;
+  -fx-left: 0;
+  -fx-width: 100%;
+  -fx-height: 100%;
+  -fx-z-index: 1;
+  -fx-transition: all 0.3s;
+  -fx-background-color: rgba(255,255,255,0.1);
+}
+#btn-one:hover::after {
+  -fx-opacity: 0;
+  -fx-transform: scale(0.1, 1);
 }
