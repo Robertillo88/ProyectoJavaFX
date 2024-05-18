@@ -22,63 +22,74 @@
 #Scroll{
     -fx-background-color: #568fb8;
 }
-#PrincipalPane {
-    -fx-background-color: #044675;
-}
+
 #MainPane {
 -fx-background-color: #568fb8;
 }
-#Fifth {
--fx-background-color: #568fb8;
-}
-#Sixth {
+#FifthPane {
 -fx-background-color: #044675;
 }
+#SixthPane {
+-fx-background-color: #568fb8;
+}
 
-#btn-one {
-  -fx-color: #FFF;
-  -fx-transition: all 0.3s;
+
+#PrincipalPane {
+-fx-background-color: #fffff;
 }
-#btn-one span {
-  -fx-transition: all 0.3s;
+#Principal {
+    -fx-border-width: 2 2 1 2;
+    -fx-border-style: solid ;
+    -fx-border-color: #00075c;
+    -fx-background-color: #030d82;
 }
-#btn-one::before {
-  -fx-content: '';
-  -fx-position: absolute;
-  -fx-bottom: 0;
-  -fx-left: 0;
+
+#Principal:hover {
+    -fx-background-color: #00075c;
+    -fx-border-radius: 10;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-style: solid ;
+    -fx-border-color: #ffffff;
+}
+
+
+
+
+/* CSS */
+#bPrincipal {
+  -fx-appearance: none;
+  -fx-background-color: transparent;
+  -fx-border: 2px ;
+  -fx-border-style: solid #1A1A1A;
+  -fx-border-radius: 15px;
+  -fx-box-sizing: border-box;
+  -fx-font-color: #3B3B3B;
+  -fx-cursor: pointer;
+  -fx-display: inline-block;
+  -fx-font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+  -fx-line-height: normal;
+  -fx-outline: none;
+  -fx-padding: 16px 24px;
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  -fx-touch-action: manipulation;
   -fx-width: 100%;
-  -fx-height: 100%;
-  -fx-z-index: 1;
-  -fx-opacity: 0;
-  -fx-transition: all 0.3s;
-  -fx-border-top-width: 1px;
-  -fx-border-bottom-width: 1px;
-  -fx-border-top-style: solid;
-  -fx-border-bottom-style: solid;
-  -fx-border-top-color: rgba(255,255,255,0.5);
-  -fx-border-bottom-color: rgba(255,255,255,0.5);
-  -fx-transform: scale(0.1, 1);
+  -fx-will-change: transform;
 }
-#btn-one:hover span {
-  -fx-letter-spacing: 2px;
+
+#bPrincipal:disabled {
+  -fx-pointer-events: none;
 }
-#btn-one:hover::before {
-  -fx-opacity: 1;
-  -fx-transform: scale(1, 1);
+
+#bPrincipal:hover {
+  -fx-font-color: #fff;
+  -fx-background-color: #1A1A1A;
+  -fx-box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
-#btn-one::after {
-  -fx-content: '';
-  -fx-position: absolute;
-  -fx-bottom: 0;
-  -fx-left: 0;
-  -fx-width: 100%;
-  -fx-height: 100%;
-  -fx-z-index: 1;
-  -fx-transition: all 0.3s;
-  -fx-background-color: rgba(255,255,255,0.1);
-}
-#btn-one:hover::after {
-  -fx-opacity: 0;
-  -fx-transform: scale(0.1, 1);
+
+#bPrincipal:active {
+  -fx-box-shadow: none;
 }

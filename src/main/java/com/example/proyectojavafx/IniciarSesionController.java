@@ -61,27 +61,30 @@ public class IniciarSesionController extends SceneController{
             fileReader = new FileReader(datosFile);
             bufferedReader = new BufferedReader(fileReader);
 
-            boolean existeUsuario = false;
-            boolean contraseñaCorrecta = false;
+            boolean existeUsuario;
+            boolean contraseñaCorrecta;
 
             String linea;
             String datos[];
             String usuario;
             String contraseña;
             do {
+                contraseñaCorrecta = false;
+                existeUsuario = false;
                 linea = bufferedReader.readLine();
                 if (linea != null) {
                     System.out.println(linea);
-                    datos = linea.split("-");
-                    System.out.println(datos[0] + "/" + datos[1]);
+                    datos = linea.split("--");
                     usuario = tUsuario.getText();
                     contraseña = tContraseña.getText();
                     if (usuario.equals(datos[0]) ) {
                         existeUsuario = true;
+                        if (contraseña.equals(datos[1]) ) {
+                            contraseñaCorrecta = true;
+                        }
+                        break;
                     }
-                    if (contraseña.equals(datos[1]) ) {
-                        contraseñaCorrecta = true;
-                    }
+
                 } else {
                     System.out.println("Archivo vacio");;
                 }
@@ -98,7 +101,7 @@ public class IniciarSesionController extends SceneController{
             } else if (!rAcepto.isSelected()) {
                 lMessage.setText("Debes aceptar los terminos y condiciones");
             } else {
-                switchFxml("Principal.fxml", bIniciar);
+                switchFxml("PaginaPrincipal.fxml", bIniciar);
             }
             bufferedReader.close();
         } catch (IOException f) {

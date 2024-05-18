@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SceneController {
-    String datosFile = "C:\\Users\\DavidGM\\IdeaProjects\\ProyectoJavaFX\\src\\main\\java\\com\\example\\proyectojavafx\\Datos.txt";
+    String datosFile = "C:\\Users\\super\\IdeaProjects\\ProyectoJavaFX\\src\\main\\java\\com\\example\\proyectojavafx\\Datos.txt";
 
     public void switchFxml(String fxml, Button button) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxml));
