@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="756.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoJavaFX.PaginaInicialController">
+   <children>
+      <HBox>
+         <children>
+            <Pane id="PaginaInicialIzquierda" prefHeight="756.0" prefWidth="550.0">
+               <children>
+                  <ImageView fitHeight="284.0" fitWidth="253.0" layoutX="149.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/Banco.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="316.0" prefHeight="306.0" prefWidth="338.0" text="Banco De Madrid" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Frank Ruehl CLM Bold" size="84.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="189.0" layoutY="664.0" text="Roberto Martinez Davies">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane id="PaginaInicialDerecha" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="685.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="52.0" prefHeight="125.0" prefWidth="536.0" text="Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Console" size="56.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="216.0" layoutY="317.0" prefHeight="365.0" prefWidth="253.0">
+                     <children>
+                        <StackPane layoutY="183.0" prefHeight="160.0" prefWidth="253.0">
+                           <children>
+                              <ImageView fitHeight="132.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                                 <image>
+                                    <Image url="@../Imagenes/UserEnter.png" />
+                                 </image></ImageView>
+                              <Button fx:id="bCrearCuenta" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchCrearCuenta" opacity="0.0" prefHeight="160.0" prefWidth="180.0" text="CrearCuenta">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="253.0" text="Crear Cuenta" textFill="WHITE">
+                                 <StackPane.margin>
+                                    <Insets top="115.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font name="Lucida Console" size="20.0" />
+                                 </font></Label>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="160.0" prefWidth="253.0">
+                           <children>
+                              <ImageView fitHeight="132.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                                 <image>
+                                    <Image url="@../Imagenes/UserAdd.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                              <Button fx:id="bIniciarSesion" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#switchIniciarSesion" opacity="0.0" prefHeight="160.0" prefWidth="180.0" text="IniciarSesion">
+                                 <font>
+                                    <Font name="Fira Code Retina" size="40.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </Button>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="253.0" text="Iniciar Sesion" textFill="WHITE">
+                                 <StackPane.margin>
+                                    <Insets top="115.0" />
+                                 </StackPane.margin>
+                                 <font>
+                                    <Font name="Lucida Console" size="20.0" />
+                                 </font></Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="85.0" fitWidth="72.0" layoutX="307.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/license.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="bSkip" layoutX="65.0" layoutY="378.0" mnemonicParsing="false" onAction="#skip" prefHeight="85.0" prefWidth="100.0" text="Skip" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</Pane>

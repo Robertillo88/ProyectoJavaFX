@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="pGeneral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1235.0" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoJavaFX.PaginaPrincipal.GeneralController">
+   <children>
+      <ImageView fitHeight="389.0" fitWidth="632.0" layoutX="122.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/credit-card%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="417.0" fitWidth="549.0" layoutX="702.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/credit-card.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="389.0" fitWidth="632.0" layoutX="114.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/credit-card%20(1).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="600.0" prefHeight="72.0" prefWidth="185.0" text="20,000" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lucida Console" size="49.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="295.0" layoutY="287.0" prefHeight="72.0" prefWidth="185.0" text="20,000" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lucida Console" size="49.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

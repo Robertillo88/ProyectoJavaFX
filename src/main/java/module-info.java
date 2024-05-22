@@ -9,6 +9,8 @@ module com.example.proyectojavafx {
 
 
 
-    opens com.example.proyectojavafx to javafx.fxml;
-    exports com.example.proyectojavafx;
+    opens ProyectoJavaFX to javafx.fxml;
+    exports ProyectoJavaFX;
+    exports ProyectoJavaFX.PaginaPrincipal;
+    opens ProyectoJavaFX.PaginaPrincipal to javafx.fxml;
 }

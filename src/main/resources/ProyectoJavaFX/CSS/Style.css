@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+#PaginaInicialIzquierda {
+    -fx-background-color: #030d82;
+}
+
+#PaginaInicialDerecha {
+    -fx-background-color: #044675;
+}
+
+#IniciarSesionIzquierda {
+    -fx-background-color: #030d82;
+}
+
+#IniciarSesionDerecha {
+    -fx-background-color: #044675;
+}
+
+#CrearCuentaIzquierda {
+-fx-background-color: #030d82;
+}
+
+#CrearCuentaDerecha {
+-fx-background-color: #044675;
+}
+
+#Terminos {
+    -fx-background-color: #044675;
+}
+
+#Scroll{
+    -fx-background-color: #568fb8;
+}
+
+#pHistorial {
+    -fx-background-color: #044675;
+}
+
+#pTienda {
+    -fx-background-color: #044675;
+}
+
+#pTarjeta {
+    -fx-background-color: #044675;
+}
+
+#pGeneral {
+    -fx-background-color: #044675;
+}
+
+#pPropiedades {
+    -fx-background-color: #044675;
+}
+
+#pCuenta {
+    -fx-background-color: #044675;
+}
+
+#MainPane {
+-fx-background-color: #568fb8;
+}
+
+
+
+#PrincipalPane {
+-fx-background-color: #fffff;
+}
+
+#Principal {
+    -fx-border-width: 2 2 1 2;
+    -fx-border-style: solid ;
+    -fx-border-color: #00075c;
+    -fx-background-color: #030d82;
+}
+
+#Principal:hover {
+    -fx-background-color: #00075c;
+    -fx-border-radius: 10;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-style: solid ;
+    -fx-border-color: #ffffff;
+}
+
+
+
+
+/* CSS */
+#bPrincipal {
+  -fx-appearance: none;
+  -fx-background-color: transparent;
+  -fx-border: 2px ;
+  -fx-border-style: solid #1A1A1A;
+  -fx-border-radius: 15px;
+  -fx-box-sizing: border-box;
+  -fx-font-color: #3B3B3B;
+  -fx-cursor: pointer;
+  -fx-display: inline-block;
+  -fx-font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+  -fx-line-height: normal;
+  -fx-outline: none;
+  -fx-padding: 16px 24px;
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  -fx-touch-action: manipulation;
+  -fx-width: 100%;
+  -fx-will-change: transform;
+}
+
+#bPrincipal:disabled {
+  -fx-pointer-events: none;
+}
+
+#bPrincipal:hover {
+  -fx-font-color: #fff;
+  -fx-background-color: #1A1A1A;
+  -fx-box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+#bPrincipal:active {
+  -fx-box-shadow: none;
+}
